@@ -4,6 +4,7 @@
 
 - Backend: FastAPI, Pydantic, SQLAlchemy (SQLite)
 - Frontend: Streamlit, Pandas, Altair
+- Hosting: Railway(backend), Vercel (frontend) https://flex-assessment.vercel.app/
 
 ### What’s included
 
@@ -250,3 +251,4 @@ set NEXT_PUBLIC_API_BASE_URL=http://localhost:8000  # Windows cmd
 npm run dev
 # PowerShell: $env:NEXT_PUBLIC_API_BASE_URL="http://localhost:8000"; npm run dev
 ```
+The backend is hosted on Railway while the frontend is live on https://flex-assessment.vercel.app/
