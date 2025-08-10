@@ -1,0 +1,13 @@
+.venv/
+.env
+node_modules/
+frontend_next/node_modules/
+.next/
+frontend_next/.next/
+dist/
+build/
+__pycache__/
+.pytest_cache/
+.DS_Store
+*.sqlite
+*.db

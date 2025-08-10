@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+body {
+  @apply bg-brand-bg text-white;
+}
+
+.card {
+  @apply bg-brand-card border border-neutral-800 rounded-xl;
+}
+
+.container-narrow {
+  @apply max-w-6xl mx-auto px-4;
+}

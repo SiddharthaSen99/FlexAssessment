@@ -1,0 +1,121 @@
+{
+  "status": "success",
+  "result": [
+    {
+      "id": 1001,
+      "type": "guest-to-host",
+      "status": "published",
+      "rating": 9.0,
+      "publicReview": "Fantastic stay! The flat was spotless and check-in was smooth.",
+      "reviewCategory": [
+        { "category": "cleanliness", "rating": 9 },
+        { "category": "communication", "rating": 10 },
+        { "category": "location", "rating": 9 }
+      ],
+      "submittedAt": "2024-06-15 10:24:10",
+      "guestName": "Alice Johnson",
+      "listingName": "2B N1 A - 29 Shoreditch Heights"
+    },
+    {
+      "id": 1002,
+      "type": "guest-to-host",
+      "status": "published",
+      "rating": null,
+      "publicReview": "Great location but a bit noisy at night.",
+      "reviewCategory": [
+        { "category": "cleanliness", "rating": 8 },
+        { "category": "communication", "rating": 9 },
+        { "category": "location", "rating": 7 }
+      ],
+      "submittedAt": "2024-05-02 18:01:33",
+      "guestName": "Ben Wright",
+      "listingName": "Kings Cross Loft B2"
+    },
+    {
+      "id": 1003,
+      "type": "guest-to-host",
+      "status": "published",
+      "rating": 10,
+      "publicReview": "Absolutely perfect. Will return!",
+      "reviewCategory": [
+        { "category": "cleanliness", "rating": 10 },
+        { "category": "communication", "rating": 10 },
+        { "category": "location", "rating": 10 }
+      ],
+      "submittedAt": "2023-12-21 09:10:05",
+      "guestName": "Carla Mendes",
+      "listingName": "Kings Cross Loft B2"
+    },
+    {
+      "id": 1004,
+      "type": "host-to-guest",
+      "status": "published",
+      "rating": null,
+      "publicReview": "David and team were respectful and left the place tidy.",
+      "reviewCategory": [
+        { "category": "respect_house_rules", "rating": 10 },
+        { "category": "communication", "rating": 9 }
+      ],
+      "submittedAt": "2023-11-01 13:45:50",
+      "guestName": "David Lee",
+      "listingName": "Riverside Studio 12"
+    },
+    {
+      "id": 1005,
+      "type": "guest-to-host",
+      "status": "published",
+      "rating": 6.5,
+      "publicReview": "Flat was clean but heating was tricky to figure out.",
+      "reviewCategory": [
+        { "category": "cleanliness", "rating": 9 },
+        { "category": "communication", "rating": 7 },
+        { "category": "amenities", "rating": 6 }
+      ],
+      "submittedAt": "2023-10-05 20:14:18",
+      "guestName": "Ella Park",
+      "listingName": "2B N1 A - 29 Shoreditch Heights"
+    },
+    {
+      "id": 1006,
+      "type": "guest-to-host",
+      "status": "published",
+      "rating": 7.0,
+      "publicReview": "Good value for money.",
+      "reviewCategory": [
+        { "category": "cleanliness", "rating": 7 },
+        { "category": "communication", "rating": 7 }
+      ],
+      "submittedAt": "2023-07-19 08:40:30",
+      "guestName": "Frank Thomas",
+      "listingName": "Riverside Studio 12"
+    },
+    {
+      "id": 1007,
+      "type": "guest-to-host",
+      "status": "published",
+      "rating": null,
+      "publicReview": "Host was responsive. A few maintenance issues.",
+      "reviewCategory": [
+        { "category": "communication", "rating": 9 },
+        { "category": "maintenance", "rating": 6 }
+      ],
+      "submittedAt": "2022-09-01 12:00:00",
+      "guestName": "Grace Hopper",
+      "listingName": "2B N1 A - 29 Shoreditch Heights"
+    },
+    {
+      "id": 1008,
+      "type": "host-to-guest",
+      "status": "published",
+      "rating": null,
+      "publicReview": "Henry followed all house rules and was a pleasure to host.",
+      "reviewCategory": [
+        { "category": "respect_house_rules", "rating": 10 }
+      ],
+      "submittedAt": "2022-08-21 22:45:14",
+      "guestName": "Henry Ford",
+      "listingName": "Kings Cross Loft B2"
+    }
+  ]
+}
+
