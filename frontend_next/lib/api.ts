@@ -13,16 +13,27 @@ export type NormalizedReview = {
   approved: boolean
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8000'
+// Normalize base and force absolute URLs in production
+const RAW = (process.env.NEXT_PUBLIC_API_BASE_URL || '').trim()
+const API_BASE = RAW
+  ? (/^https?:\/\//i.test(RAW) ? RAW : `https://${RAW}`).replace(/\/+$/, '')
+  : ''
+
+function buildUrl(path: string): string {
+  const p = path.startsWith('/') ? path : `/${path}`
+  // Fallback to relative only when BASE is empty (local dev without env)
+  return API_BASE ? `${API_BASE}${p}` : p
+}
 
 async function http<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`, {
+  const url = buildUrl(path)
+  const res = await fetch(url, {
     ...init,
     headers: { 'Content-Type': 'application/json', ...(init?.headers || {}) },
     cache: 'no-store',
   })
   if (!res.ok) {
-    throw new Error(`HTTP ${res.status}`)
+    throw new Error(`HTTP ${res.status} ${url}`)
   }
   return res.json() as Promise<T>
 }
